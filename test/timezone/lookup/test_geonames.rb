@@ -30,7 +30,7 @@ class TestGeonames < ::Minitest::Test
 
   def test_default_config
     assert_equal 'http', lookup.config.protocol
-    assert_equal 'api.geonames.org', lookup.config.url
+    assert_equal 'secure.geonames.net', lookup.config.url
   end
 
   def test_missing_username

@@ -20,8 +20,8 @@ module Timezone
           raise(::Timezone::Error::InvalidConfig, 'missing username')
         end
 
-        config.protocol ||= 'http'
-        config.url ||= 'api.geonames.org'
+        config.protocol ||= 'https'
+        config.url ||= 'secure.geonames.net'
 
         super
       end
